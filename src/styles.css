@@ -57,6 +57,7 @@ a:hover {
 
 .teal-button {
     width: 200px;
+    min-width: 200px;
     height: 50px;
     background-color: #0C7A75;
     color: white;
@@ -64,7 +65,7 @@ a:hover {
     font-size: 16px;
     font-weight: 400;
     text-align: center;
-    border: 1px solid white;
+    border: 2px solid white;
     cursor: pointer;
 }
 
@@ -155,6 +156,32 @@ a:hover {
     }
 }
 
+.reasons-padding {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media (min-width: 768px) {
+    .reasons-padding {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media (min-width: 991px) {
+    .reasons-padding {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .reasons-padding {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
+
 .seenon-img {
     width: 50%;
     height: 50%;
@@ -185,6 +212,7 @@ a:hover {
 
 .price-plan {
     width: 100%;
+    color: #323232;
 }
 
 .annual {
@@ -192,13 +220,15 @@ a:hover {
 }
 
 .monthly, .annual {
-    min-width: 285px;
+    white-space: nowrap;
     margin: 0 auto;
 }
 
 .price {
     font-size: 44px;
     vertical-align: text-top;
+    display: block;
+    text-align: center;
 }
 
 .price:before {
@@ -208,39 +238,23 @@ a:hover {
     padding-right: 0.1em;
 }
 
-.price-border {
-    border-right: 1px solid #E8E8E8;
+
+.price-button {
+    padding-top: 35px;
+    display: flex;
+    justify-content: center;
+    /*ch*/
 }
 
-@media (min-width: 0) and (max-width: 768px) {
+@media (max-width: 745px) {
     .price-border {
         border-right: none;
     }
 }
 
-@media (min-width: 768px ) {
+@media (min-width: 991px) {
     .price-border {
         border-right: 1px solid #E8E8E8;
-    }
-
-    .price-border:nth-of-type(2n) {
-        border-right: none;
-    }
-}
-
-@media (min-width: 992px) {
-    .price-border:nth-of-type(2n) {
-        border-right: 1px solid #E8E8E8;
-    }
-
-    .price-border:nth-of-type(3n) {
-        border-right: none;
-    }
-}
-
-@media (min-width: 1200px) {
-    .price-border:nth-of-type(3n) {
-        border-right: 1px solid #E8E8E8;;
     }
 }
 
@@ -252,6 +266,9 @@ a:hover {
     width: 120px;
     font-size: 14px;
     font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
     border-right: 1px solid transparent;
     -webkit-border-radius: 0 50px 50px 0;
     border-radius: 0 50px 50px 0;
@@ -265,26 +282,60 @@ a:hover {
     top: 10%;
 }
 
-.smaller-width {
-    width: 22%;
-    min-width: 275px;
-    margin: 0 auto;
-    display: table;
-}
-
-.bigger-line-height {
-    line-height: 1.8;
-}
-
-@media (max-width: 767px) {
-    .cta-btn {
-        text-align: center;
+@media (max-width: 991px) {
+    .popular {
+        left: 60%;
+        top: 20%;
     }
 }
 
-@media (min-width: 768px) {
+.faq-title-padding {
+    padding-bottom: 100px;
+}
+
+@media (max-width: 767px) {
+    .faq-title-padding {
+        padding-bottom: 50px;
+    }
+}
+
+.faq-bottom-line {
+    padding-top: 50px;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .faq-bottom-line {
+        padding-top: 0;
+    }
+}
+
+.cta-txt {
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: -0.44px;
+    text-align: center;
+    color: white;
+}
+
+.cta-btn {
+    text-align: center;
+    padding-top: 30px;
+}
+
+@media (min-width: 991px) {
+    .cta-txt {
+        text-align: left;
+    }
+
     .cta-btn {
-        text-align: right;
+        display: flex;
+        align-items: center;
+        display: -webkit-flex; /* Safari */
+        -webkit-flex-direction: row-reverse; /* Safari 6.1+ */
+        display: flex;
+        flex-direction: row-reverse;
+        padding-top: 0;
     }
 }
 
@@ -310,10 +361,6 @@ p {
 
 .teal-text {
     color: #0C7A75;
-}
-
-.black-text {
-    color: black;
 }
 
 .bottom-ul {
@@ -349,5 +396,213 @@ p {
 @media (max-width: 767px) {
     .office-img {
         width: 100%;
+    }
+}
+
+<!--
+
+h1 {
+    font-size: 56px;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+}
+
+.H1 {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 70px;
+    letter-spacing: -0.54px;
+    color: black;
+}
+
+.lead-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #808080;
+}
+
+
+/*
+testimonials
+*/
+.H4-bold {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.17px;
+    color: #808080;
+}
+
+h4 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    color: #323232;
+    /*ch*/
+}
+
+
+.bold {
+    font-weight: 700;
+}
+
+
+.caption {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 1.5px;
+    color: black;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: -0.6px;
+    color: #323232;
+    /*
+checked
+*/
+
+}
+
+.pricing-title {
+    padding-bottom: 0.5rem;
+    /*
+    checked
+    */
+}
+
+@media (min-width: 992px) {
+    .pricing-title {
+        padding-bottom: 4rem;
+    }
+    /*
+checked
+*/
+
+}
+
+.caption-price {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: center;
+    color: #7E8EA3;
+    /*ch*/
+}
+
+@media (max-width: 991px) {
+    .caption-price {
+        padding-top: 40px;
+        /*ch*/
+    }
+}
+
+.caption-price-uppercase {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #9A9A9A;
+    /*ch*/
+}
+
+.plans-include-title {
+    padding-top: 70px;
+    color: #333333;
+}
+
+
+@media (max-width: 767px) {
+    .plans-include-title {
+        padding-top: 35px;
+    }
+}
+
+.plans-li {
+    width: 22%;
+    min-width: 275px;
+    margin: 0 auto;
+    display: table;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+    color: #4A4A4A;
+}
+
+.pricing-bottom-line {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    padding-top: 40px;
+    color: #4A4A4A;
+}
+
+.paragraph-black {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #808080;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-text {
+    text-align: center;
+    color: #4A4A4A;
+}
+
+.teal-text {
+    color: #0B7A75;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: black;
+}
+
+
+.center-text {
+    text-align: center;
+}
+
+.paragraph-white {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    color: white;
+}
+
+
+
+
+
+/*h4 bold in FAQ bottom*/
+.h4-bold {
+    font-weight: 700;
+    color: #333333;
+}
+
+
+.section-padding {
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+}
+
+@media (max-width: 767px) {
+    .section-padding {
+        padding-top: calc(6.25rem / 2);
+        padding-bottom: calc(6.25rem / 2);
     }
 }
