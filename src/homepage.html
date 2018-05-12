@@ -11,63 +11,68 @@
 </head>
 <body>
 
+<!-- Navbar -->
+<section>
+    <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-padding grey-bg">
+        <a class="navbar-brand" href="homepage.html">
+            <img src="../images/codekeeper-logo.png" alt="logo" style="width: 180px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7 text-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7 float-right text-center">
+                <button class="transparent-button">Log in</button>
+                <div class="line-break w-100"></div>
+                <button class="teal-button">Setup Escrow</button>
+            </div>
+        </div>
+    </nav>
+</section>
+
 <!-- Hero -->
-<section class="grey-bg pt-3">
+<section class="grey-bg">
     <div class="container hero">
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-xl navbar-light">
-            <a class="navbar-brand" href="homepage.html"> <!-- logo -->
-                <img src="../images/codekeeper-logo.png" alt="logo" style="width: 162px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7 text-center">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#features">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#pricing">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about-us.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about-us.html#contact">Contact</a>
-                        </li>
-                    </ul>
+        <!-- jumbotron -->
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-12 cntr">
+                    <h1>Source code escrow for developers</h1>
                 </div>
-                <br>
-                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7 float-right text-center">
-                    <button class="transparent-button">Login</button>
-                    <div class="line-break w-100"></div>
+            </div>
+            <div class="row top-padding bottom-padding">
+                <div class="col-sm-12 col-md-12 col-lg-8 cntr">
+                    <h6 class="lead-text">An all-in-one solution for software developers and publishers
+                        to provide
+                        their clients with source code escrow as part of their service level and/or license
+                        agreements.</h6>
+                </div>
+            </div>
+            <div class="row bottom-padding">
+                <div class="col-12 cntr">
                     <button class="teal-button">Setup Escrow</button>
                 </div>
             </div>
-        </nav>
-
-        <!-- jumbotron -->
-        <div class="jumbotron">
-            <h1 class="pt-5">Source code escrow for developers</h1>
             <div class="row">
-                <div class="col-sm-10 col-md-7 col-lg-7 cntr pt-3">
-                    <h4 class="grey-text">
-                        <small>An all-in-one solution for software developers and publishers
-                            to provide
-                            their clients with source code escrow as part of their service level and/or license
-                            agreements.
-                        </small>
-                    </h4>
-                </div>
-            </div>
-            <div class="row">
-                <button class="teal-button cntr mt-4">Setup Escrow</button>
-            </div>
-            <div class="row">
-                <div class="col-md-12 mx-auto text-center pt-4" style="padding-left: 0;  padding-right: 0;">
-                    <img src="../images/screen-shot.PNG" class="img-fluid shadow-sm">
+                <div class="col-12 text-center">
+                    <img src="../images/codekeeper-dashboard.png" class="img-fluid shadow-sm hero-image">
                 </div>
             </div>
         </div>
@@ -76,24 +81,24 @@
 </section>
 
 <!-- Testimonials -->
-<section class="grey-bg grey-text p-5">
-    <div class="container">
-        <div class="row text-center">
+<section class="grey-bg">
+    <div class="container-fluid section-padding">
+        <div class="row">
             <div class="col text-center">
-                <h4 class="pb-3 grey-text">Trusted partner of these great brands from around the world…</h4>
+                <h4 class="grey-text">Trusted partner of these great brands from around the world…</h4>
             </div>
         </div>
-        <div class="row pl-lg-5 pr-lg-5 pl-md-5 pr-md-5 text-center">
+        <div class="row centered-div testimonials-row">
             <div class="col-md-6 col-lg-3 testimonials-div">
                 <img src="../images/pepsico.png" alt="pepsico" class="testimonials-img img-fluid">
             </div>
-            <div class="col-md-6 col-lg-3 testimonials-div">
+            <div class="col-md-6 col-lg-2 testimonials-div">
                 <img src="../images/slatedigital.png" alt="slatedigital" class="testimonials-img img-fluid">
             </div>
             <div class="col-md-6 col-lg-3 testimonials-div">
-                <img src="../images/cdb.png" alt="cdb" class="testimonials-img img-fluid">
+                <img src="../images/cdbaby.png" alt="cdb" class="testimonials-img img-fluid">
             </div>
-            <div class="col-md-6 col-lg-3 testimonials-div">
+            <div class="col-md-6 col-lg-4 testimonials-div">
                 <img src="../images/colorado.png" alt="colorado" class="testimonials-img img-fluid">
             </div>
         </div>
@@ -101,48 +106,42 @@
 </section>
 
 <!-- Key Features -->
-<section class="pt-md-5 pt-lg-5" id="features">
-    <div class="container">
-        <div class="row">
+<section id="features">
+    <div class="container-fluid section-padding">
+        <div class="row side-padding">
             <div class="col-12">
-                <h1 class="center-title">Key Features</h1>
+                <h2 class="center-title">Key Features</h2>
             </div>
-            <div class="col-lg-7 col-md-7 col-sm-12 pb-md-1 pb-lg-5">
-                <h4 class="grey-text center-content-sm">
-                    <small>All features are available through an easy to use
-                        Dashboard
-                        from which you manage all your source code escrow operations.
-                    </small>
-                </h4>
+            <div class="col-lg-7 col-md-9 col-sm-12">
+                <h6 class="lead-text center-content-sm">All features are available through an easy to use
+                    Dashboard
+                    from which you manage all your source code escrow operations.</h6>
             </div>
         </div>
-        <div class="row center-content-sm pb-4">
-            <div class="col-sm-12 col-md-6 col-lg-6 pb-lg-5">
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-6 centered-div">
-                        <img src="../images/how-it-works-1.png" alt="" class="steps-img mb-4 mt-4 mt-lg-0">
+        <div class="row center-content-sm side-padding">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="row pt-4 pt-md-5">
+                    <div class="col-sm-12 col-md-12 col-lg-4 centered-div">
+                        <img src="../images/how-it-works-1.png" alt="feature1" class="feature-img mb-4 mt-4 mt-lg-0">
                     </div>
-                    <div class="col-sm-12 col-md-12 col-lg-6">
-                        <h5 class="pb-2">
-                            <small>Escrow Agreement Included</small>
-                        </h5>
-                        <p class="grey-text">A legally sound escrow agreement comes with each Codekeeper account.
+                    <div class="col-sm-12 col-md-12 col-lg-8 pt-3">
+                        <p class="caption">Escrow Agreement Included</p>
+                        <p class="paragraph-black">A legally sound escrow agreement comes with each Codekeeper account.
                             Together we
                             customise it
                             to fit your situation. No lawyer required!</p>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg3 pb-lg-5">
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-6 centered-div">
-                        <img src="../images/how-it-works-2.png" alt="" class="steps-img mb-4 mt-4 mt-lg-0">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="row pt-4 pt-md-5">
+                    <div class="col-sm-12 col-md-12 col-lg-4 centered-div">
+                        <img src="../images/how-it-works-2.png" alt="feature2" class="feature-img mb-4 mt-4 mt-lg-0">
                     </div>
-                    <div class="col-sm-12 col-md-12 col-lg-6">
-                        <h5 class="pb-2">
-                            <small>Beneficiary Management</small>
-                        </h5>
-                        <p class="grey-text">Easily add your licensees as beneficiary of the deposited source code in
+                    <div class="col-sm-12 col-md-12 col-lg-8 pt-3">
+                        <p class="caption">Beneficiary Management</p>
+                        <p class="paragraph-black">Easily add your licensees as beneficiary of the deposited source code
+                            in
                             escrow and
                             keep
                             them
@@ -150,16 +149,15 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg3 pb-lg-5">
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-6 centered-div">
-                        <img src="../images/how-it-works-3.png" alt="" class="steps-img mb-4 mt-4 mt-lg-0">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="row pt-4 pt-md-5">
+                    <div class="col-sm-12 col-md-12 col-lg-4 centered-div">
+                        <img src="../images/how-it-works-3.png" alt="feature3" class="feature-img mb-4 mt-4 mt-lg-0">
                     </div>
-                    <div class="col-sm-12 col-md-12 col-lg-6">
-                        <h5 class="pb-2">
-                            <small>Source Code Repositories</small>
-                        </h5>
-                        <p class="grey-text">Codekeeper integrates directly with developer workflows on Github and other
+                    <div class="col-sm-12 col-md-12 col-lg-8 pt-3">
+                        <p class="caption">Source Code Repositories</p>
+                        <p class="paragraph-black">Codekeeper integrates directly with developer workflows on Github and
+                            other
                             popular
                             SCM-platforms. Source code deposits into the escrow are encrypted and fully
                             automated.
@@ -168,16 +166,15 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg3 pb-lg-5">
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-6 centered-div">
-                        <img src="../images/how-it-works-4.png" alt="" class="steps-img mb-4 mt-4 mt-lg-0">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="row pt-4 pt-md-5">
+                    <div class="col-sm-12 col-md-12 col-lg-4 centered-div">
+                        <img src="../images/how-it-works-4.png" alt="feature4" class="feature-img mb-4 mt-4 mt-lg-0">
                     </div>
-                    <div class="col-sm-12 col-md-12 col-lg-6">
-                        <h5 class="pb-2">
-                            <small>Release Terms</small>
-                        </h5>
-                        <p class="grey-text">Specify for each beneficiary which source code repositories they should
+                    <div class="col-sm-12 col-md-12 col-lg-8 pt-3">
+                        <p class="caption">Release Terms</p>
+                        <p class="paragraph-black">Specify for each beneficiary which source code repositories they
+                            should
                             receive and
                             under which conditions they should be released. Manage complex agreements with ease.</p>
                     </div>
@@ -188,40 +185,35 @@
 </section>
 
 <!-- Subfeatures -->
-<section class="grey-bg p-5">
-    <div class="container">
+<section class="grey-bg">
+    <div class="container section-padding">
         <div class="row">
-            <div class="col-sm-6 col-md-3 col-lg-3 p-3">
-                <h5 class="teal-text pb-1">
-                    <small>No Coding Required</small>
-                </h5>
-                <p class="grey-text">Using Codekeeper requires no coding. The technical part of the setup can be
+            <div class="col-sm-6 col-md-3 col-lg-3">
+                <p class="caption teal-text">No Coding Required</p>
+                <p class="paragraph-black pb-5 pb-md-0 pb-lg-0">Using Codekeeper requires no coding. The technical part
+                    of the setup can be
                     completed in
                     minutes!</p>
             </div>
-            <div class="col-sm-6 col-md-3 col-lg-3 p-3">
-                <h5 class="teal-text pb-1">
-                    <small>End-to-End Encryption</small>
-                </h5>
-                <p class="grey-text">All data is secured at all times, both in transit and at rest with AES256/512
+            <div class="col-sm-6 col-md-3 col-lg-3">
+                <p class="caption teal-text">End-to-End Encryption</p>
+                <p class="paragraph-black pb-5 pb-md-0 pb-lg-0">All data is secured at all times, both in transit and at
+                    rest with AES256/512
                     encryption.
                     Security
                     first.</p>
             </div>
-            <div class="col-sm-6 col-md-3 col-lg-3 p-3">
-                <h5 class="teal-text pb-1">
-                    <small>Quick Recovery</small>
-                </h5>
-                <p class="grey-text">Assure your clients of quick recovery if there’s a release event, Release
+            <div class="col-sm-6 col-md-3 col-lg-3">
+                <p class="caption teal-text">Quick Recovery</p>
+                <p class="paragraph-black pb-5 pb-md-0 pb-lg-0">Assure your clients of quick recovery if there’s a
+                    release event, Release
                     procedures are
                     processed
                     24/7/365.</p>
             </div>
-            <div class="col-sm-6 col-md-3 col-lg-3 p-3">
-                <h5 class="teal-text pb-1">
-                    <small>Beneficiary Accounts</small>
-                </h5>
-                <p class="grey-text">Your clients can log in, review escrow status and initiate release procedures
+            <div class="col-sm-6 col-md-3 col-lg-3">
+                <p class="caption teal-text">Beneficiary Accounts</p>
+                <p class="paragraph-black">Your clients can log in, review escrow status and initiate release procedures
                     (Business Plans and
                     up).</p>
             </div>
@@ -231,18 +223,15 @@
 
 <!-- Supported Platforms -->
 <section>
-    <div class="container center-content-sm">
-        <div class="row pt-md-5 pt-lg-5 pb-4">
+    <div class="container section-padding center-content-sm">
+        <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-6">
-                <h1 class="center-title">Supported Platforms</h1>
-                <h4 class="grey-text pb-4">
-                    <small>Works with all popular software development platforms, like Github,
-                        Bitbucket,
-                        Amazon CodeCommit,
-                        Gitlab, MS Visual Studio and many others.
-                    </small>
-                </h4>
-                <button class="teal-button mb-4">Setup Escrow</button>
+                <h2>Supported Platforms</h2>
+                <p class="lead-text">Works with all popular software development platforms, like Github,
+                    Bitbucket,
+                    Amazon CodeCommit,
+                    Gitlab, MS Visual Studio and many others.</p>
+                <button class="teal-button mb-5 mt-4">Setup Escrow</button>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6">
                 <div class="table-responsive">
@@ -266,7 +255,9 @@
                             </td>
                         </tr>
                         </tbody>
-                        <caption class="centered-div pt-4">Don’t see your favourite platform listed? Contact us!
+                        <caption class="text-center pt-4" style="font-size: 18px;">Don’t see your favourite platform
+                            listed?
+                            <a href="about-us.html#contact" class="grey-text"><u>Contact us!</u></a>
                         </caption>
                     </table>
                 </div>
@@ -293,10 +284,11 @@
                 </h6>
             </div>
         </div>
-        <div class="row center-content-sm reasons-padding">
+        <div class="row center-content-sm side-padding">
             <div class="col-sm-12 col-md-4 col-lg-4 pb-4 pb-md-0">
                 <h6>Industry leading pricing</h6>
-                <p class="paragraph-black">Our pricing model is completely different from traditional providers. Stop paying
+                <p class="paragraph-black">Our pricing model is completely different from traditional providers. Stop
+                    paying
                     expensive
                     lawyers who don’t understand modern software development.</p>
             </div>
@@ -309,7 +301,8 @@
             </div>
             <div class="col-sm-12 col-md-4 col-lg-4">
                 <h6>Close more deals</h6>
-                <p class="paragraph-black">Use escrow to eliminate risk for your clients and you will experience why software
+                <p class="paragraph-black">Use escrow to eliminate risk for your clients and you will experience why
+                    software
                     escrow
                     is
                     often referred to as ‘the great sales enabler’.</p>
@@ -354,7 +347,7 @@
             </div>
             <div class="col-sm-12 col-md-10 col-lg-4">
                 <div class="row speech-bubble m-1">
-                    <div class="col-1 mr-2">
+                    <div class="col-1 mr-3">
                         <img src="../images/quotes.png" alt="quotes">
                     </div>
                     <div class="col-10">
@@ -469,6 +462,7 @@
                 </div>
             </div>
         </div>
+
         <!-- annual-->
         <div class="row justify-content-center">
             <div class="col-sm-12 col-md-6 col-lg-3 price-border annual">
@@ -707,31 +701,36 @@
             </div>
         </div>
     </div>
-
 </section>
 
 <!-- Footer -->
-<section class="footer grey-bg pl-3 pl-md-5 pl-lg-5 pr-3 pr-md-5 pr-lg-5 pt-3 pt-md-5 pt-lg-5">
-    <div class="container-fluid pl-5 pr-5">
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-4">
-                <div class="row">
-                    <img src="../images/codekeeper-logo.png" alt="logo">
-                </div>
-                <div class="row">
-                    <p class="grey-text pl-3 pt-2">Source Code Escrow for Developers</p>
+<section class="grey-bg">
+    <div class="container-fluid">
+        <div class="row navbar-padding pt-5">
+            <div class="col-sm-12 col-md-12 col-lg-5 pb-3">
+                <div class="row footer-row">
+                    <div class="col-12 col-md-6 col-lg-12 footer-leftside">
+                        <img src="../images/codekeeper-logo.png" alt="logo" style="height: 100%;">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-12 pl-2">
+                        <p class="grey-text footer-p">Source Code Escrow for Developers</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-12 col-lg-8">
-                <div class="pt-3">
-                    <ul class="bottom-ul">
-                        <li class="bottom-li"><a class="grey-text" href="homepage.html">Home</a></li>
-                        <li class="bottom-li"><a class="grey-text" href="#features">Features</a></li>
-                        <li class="bottom-li"><a class="grey-text" href="#pricing">Pricing</a></li>
-                        <li class="bottom-li"><a class="grey-text" href="about-us.html">About</a></li>
-                        <li class="bottom-li"><a class="grey-text" href="about-us.html#contact">Contact</a></li>
-                    </ul>
-                    <div class="pt-3 pb-3 w-100">
+            <div class="col-sm-12 col-md-12 col-lg-7">
+                <div class="row footer-row pt-3">
+                    <div class="col-12" style="padding: 0;">
+                        <ul class="bottom-ul">
+                            <li class="bottom-li"><a class="grey-text" href="homepage.html">Home</a></li>
+                            <li class="bottom-li"><a class="grey-text" href="#features">Features</a></li>
+                            <li class="bottom-li"><a class="grey-text" href="#pricing">Pricing</a></li>
+                            <li class="bottom-li"><a class="grey-text" href="about-us.html">About</a></li>
+                            <li class="bottom-li"><a class="grey-text" href="about-us.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row footer-row">
+                    <div class="col-12" style="padding: 20px 0 0 0;">
                         <ul class="bottom-ul">
                             <li class="bottom-li"><a class="grey-text" href="#">Terms & Conditions</a></li>
                             <li class="bottom-li"><a class="grey-text" href="#">Privacy Policy</a></li>
@@ -739,20 +738,19 @@
                     </div>
                 </div>
             </div>
-            <div class="row pt-3 w-100 text-center">
-                <div class="col-12">
-                    <p class="grey-text text-center">www.codekeeper.co - Codekeeper BV - All rights
-                        reserved
-                        2018.</p>
-                </div>
-            </div>
+        </div>
+    </div>
+    <div class="row w-100 text-center">
+        <div class="col-12">
+            <p class="grey-text text-center">www.codekeeper.co - Codekeeper BV - All rights
+                reserved
+                2018.</p>
         </div>
     </div>
 </section>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 <script src="script.js"></script>
