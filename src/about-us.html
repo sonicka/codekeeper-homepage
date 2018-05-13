@@ -12,90 +12,94 @@
 <body>
 
 <!-- Navbar -->
-<section class="grey-bg pt-3">
-    <div class="container">
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-xl navbar-light">
-            <a class="navbar-brand" href="homepage.html"> <!-- logo -->
-                <img src="../images/codekeeper-logo.png" alt="logo" style="width: 162px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7 text-center">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="homepage.html#features">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="homepage.html#pricing">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about-us.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <br>
-                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7 float-right text-center">
-                    <button class="transparent-button">Login</button>
-                    <div class="line-break w-100"></div>
-                    <button class="teal-button">Setup Escrow</button>
-                </div>
+<section>
+    <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-padding grey-bg">
+        <a class="navbar-brand" href="homepage.html">
+            <img src="../images/codekeeper-logo.png" alt="logo" style="width: 180px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7 text-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="homepage.html#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="homepage.html#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </div>
+            <br>
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7 float-right text-center">
+                <button class="transparent-button">Log in</button>
+                <div class="line-break w-100"></div>
+                <button class="teal-button">Setup Escrow</button>
+            </div>
+        </div>
+    </nav>
 </section>
 
 <!-- About Us -->
-<section class="grey-bg pb-sm-1 pb-md-3 pb-lg-3">
-    <div class="container p-5">
-        <div class="row centered-div">
-            <h1 class="pt-0 pt-md-4 pt-lg-4 pb-4 pb-md-5 pb-lg-5">About Us</h1>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6 grey-text pr-4">
-                <h4 class="pb-3">
-                    <small>Codekeeper was founded by people from the technology industry. It made no sense to us that
+<section class="grey-bg">
+    <div class="container hero">
+        <div class="jumbotron text-left">
+            <div class="row bottom-padding">
+                <div class="col-12 centered-div">
+                    <h2 class="center-title">About Us</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <h6 class="lead-text pb-4">Codekeeper was founded by people from the technology industry. It made no
+                        sense to us
+                        that
                         source
-                        code escrow would not be directly integrated with modern software development platforms. So we
+                        code escrow would not be directly integrated with modern software development platforms. So
+                        we
                         built
                         a completely new modernised platform for source code escrow that combines traditional legal
                         security
                         with modern technology workflows.
-                    </small>
-                </h4>
-                <h4 class="pb-3">
-                    <small>After our softlauch 4 years ago, we also launched the SaaS edition of Codekeeper 2 years ago.
-                        Currently we proudly serve many customers from all around the globe.
-                    </small>
-                </h4>
-                <h4 class="pb-3">
-                    <small>We’d welcome the chance to work with your organisation too!</small>
-                </h4>
-                <h4 class="font-weight-light float-right pb-3">Team Codekeeper</h4>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 pl-4">
-                <p>Expert Security</p>
-                <p class="grey-text pb-3">
-                    Data security runs deep in our DNA. We maintain world class physical and digital security in
+                    </h6>
+                    <h6 class="lead-text pb-4">After our softlauch 4 years ago, we also launched the SaaS edition of
+                        Codekeeper 2 years
+                        ago.
+                        Currently we proudly serve many customers from all around the globe.</h6>
+                    <h6 class="lead-text pb-4 pb-lg-0">We’d welcome the chance to work with your organisation too!</h6>
+
+                    <h4 class="lead-text float-right pr-5 pb-4">Team Codekeeper</h4>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 pl-4">
+                    <h6>Expert Security</h6>
+                    <p class="paragraph-black pb-4">
+                        Data security runs deep in our DNA. We maintain world class physical and digital security in
                         every
                         aspect of our service.</p>
-                <p>Pricing Philosophy</p>
-                <p class="grey-text pb-3">Software escrow is comparable to your home insurance, you need it but fortunately it's almost
+                    <h6>Pricing Philosophy</h6>
+                    <p class="paragraph-black pb-4">Software escrow is comparable to your home insurance, you need it
+                        but
+                        fortunately it's almost
                         never
                         called upon. It's a must-have that should be as affordable as possible. This is reflected in our
                         pricing
                         philosophy.</p>
-                <p class="grey-text">We keep costs low to get started and only in case you need it, you pay for solid legal
+                    <p class="paragraph-black pb-5">We keep costs low to get started and only in case you need it, you
+                        pay for
+                        solid legal
                         analysis when
                         an
                         escrow release is triggered. It's simple, in-line with your needs and saves you thousands of
                         dollars
                         that you normally pay upfront.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -104,25 +108,29 @@
 
 
 <!-- Trusted By The Best -->
-<section class="pb-sm-2 pb-md-5 pb-lg-5">
-    <div class="container-fluid grey-bg pb-3">
+<section class="grey-bg">
+    <div class="container-fluid section-padding">
         <div class="row centered-div">
-            <div class="col-sm-12 col-md-6 col-lg-6 pt-4 pt-md-5 pt-lg-5">
-                <h1 class="center-title">Trusted By The Best</h1>
-                <h4 class="grey-text pb-4"><small>Proud partner of these brands from around the world…</small></h4>
+            <div class="col">
+                <h2>Trusted By The Best</h2>
             </div>
         </div>
-        <div class="row pl-lg-3 pr-lg-3 pl-md-3 pr-md-3 pb-5 text-center">
+        <div class="row centered-div">
+            <div class="col-12 col-md-8">
+                <h6 class="lead-text pb-4 pb-md-5">Proud partner of these brands from around the world…</h6>
+            </div>
+        </div>
+        <div class="row centered-div testimonials-row">
             <div class="col-md-6 col-lg-3 testimonials-div">
                 <img src="../images/pepsico.png" alt="pepsico" class="testimonials-img img-fluid">
             </div>
-            <div class="col-md-6 col-lg-3 testimonials-div">
+            <div class="col-md-6 col-lg-2 testimonials-div">
                 <img src="../images/slatedigital.png" alt="slatedigital" class="testimonials-img img-fluid">
             </div>
             <div class="col-md-6 col-lg-3 testimonials-div">
                 <img src="../images/cdbaby.png" alt="cdb" class="testimonials-img img-fluid">
             </div>
-            <div class="col-md-6 col-lg-3 testimonials-div">
+            <div class="col-md-6 col-lg-4 testimonials-div">
                 <img src="../images/colorado.png" alt="colorado" class="testimonials-img img-fluid">
             </div>
         </div>
@@ -131,62 +139,75 @@
 </section>
 
 <!-- Contact Us -->
-<section class="pb-md-5 pb-lg-5" id="contact">
-    <div class="container pb-5">
+<section>
+    <div class="container section-padding">
         <div class="row centered-div">
-            <div class="col-sm-12 col-md-8 col-lg-8 pt-4 pt-md-4 pt-lg-4">
-                <h1 class="center-title">Contact Us</h1>
-                <h4 class="grey-text pb-4 pb-md-5 pb-lg-5"><small>At half-past eight the door opened, the policeman appeared, and, requesting
+            <div class="col">
+                <h2><span id="contact"></span>Contact Us</h2>
+            </div>
+        </div>
+        <div class="row centered-div">
+            <div class="col-12 col-md-8">
+                <h6 class="lead-text pb-4 pb-md-5">At half-past eight the door opened, the policeman appeared, and,
+                    requesting
                     them to follow him, led the way
-                    to an adjoining hall. It was evidently a court-room.</small></h4>
+                    to an adjoining hall. It was evidently a court-room.</h6>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-6 offset-md-1 offset-lg-1">
-                <h5 class="teal-text"><small>Email</small></h5>
-                <p class="grey-text pb-3">contact@codekeeper.co</p>
-                <h5 class="teal-text"><small>Sales Inquiries</small></h5>
-                <p class="grey-text pb-3">Please use our website chat feature or send us and email at contact@codekeeper.co</p>
-                <h5 class="teal-text"><small>Release Request</small></h5>
-                <p class="grey-text pb-3">If you can not login to your account please send us an email at release@codekeeper.co.
-                        (Monitored
-                        24/7/365).</p>
+                <p class="caption teal-text mb-2">Email</p>
+                <p class="paragraph-black pb-4">contact@codekeeper.co</p>
+                <p class="caption teal-text mb-2">Sales Inquiries</p>
+                <p class="paragraph-black pb-4">Please use our website chat feature or send us and email at
+                    contact@codekeeper.co</p>
+                <p class="caption teal-text mb-2">Release Request</p>
+                <p class="paragraph-black pb-4">If you can not login to your account please send us an email at
+                    release@codekeeper.co.
+                    (Monitored
+                    24/7/365).</p>
             </div>
-            <div class="col-sm-12 col-md-5 col-lg-5">
-                <h5 class="teal-text"><small>Address</small></h5>
-                <p class="pb-3">Codekeeper BV</p>
-                <p class="grey-text m-0">World Trade Center - The Hague</p>
-                <p class="grey-text m-0">Prinses Margrietplantsoen 33</p>
-                <p class="grey-text m-0">2595 AM The Hague</p>
-                <p class="grey-text pb-4">The Netherlands</p>
-                <img src="../images/codekeeper-office.png.png" alt="codekeeper-office" class="img-fluid office-img">
+            <div class="col-sm-12 col-md-5 col-lg-4">
+                <p class="caption teal-text mb-2">Address</p>
+                <h6 class="pb-4">Codekeeper BV</h6>
+                <p class="paragraph-black m-0">World Trade Center - The Hague</p>
+                <p class="paragraph-black m-0">Prinses Margrietplantsoen 33</p>
+                <p class="paragraph-black m-0">2595 AM The Hague</p>
+                <p class="paragraph-black pb-4">The Netherlands</p>
+                <img src="../images/codekeeper-office.jpg" alt="codekeeper-office" class="img-fluid office-img">
             </div>
         </div>
     </div>
 </section>
 
 <!-- Footer -->
-<section class="footer grey-bg pl-3 pl-md-5 pl-lg-5 pr-3 pr-md-5 pr-lg-5 pt-3 pt-md-5 pt-lg-5">
-    <div class="container-fluid pl-5 pr-5">
-        <div class="row center-content-sm">
-            <div class="col-sm-12 col-md-12 col-lg-4">
-                <div class="row">
-                    <img src="../images/codekeeper-logo.png" alt="logo">
-                </div>
-                <div class="row">
-                    <p class="grey-text pl-3 pt-2">Source Code Escrow for Developers</p>
+<section class="grey-bg">
+    <div class="container-fluid">
+        <div class="row navbar-padding pt-5">
+            <div class="col-sm-12 col-md-12 col-lg-5 pb-3">
+                <div class="row footer-row">
+                    <div class="col-12 col-md-6 col-lg-12 footer-leftside">
+                        <img src="../images/codekeeper-logo.png" alt="logo" style="height: 100%;">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-12 pl-2">
+                        <p class="grey-text footer-p">Source Code Escrow for Developers</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-12 col-lg-8">
-                <div class="pt-3">
-                    <ul class="bottom-ul">
-                        <li class="bottom-li"><a class="grey-text" href="homepage.html">Home</a></li>
-                        <li class="bottom-li"><a class="grey-text" href="homepage.html#features">Features</a></li>
-                        <li class="bottom-li"><a class="grey-text" href="homepage.html#pricing">Pricing</a></li>
-                        <li class="bottom-li"><a class="grey-text" href="about-us.html">About</a></li>
-                        <li class="bottom-li"><a class="grey-text" href="#contact">Contact</a></li>
-                    </ul>
-                    <div class="pt-3 pb-3 w-100">
+            <div class="col-sm-12 col-md-12 col-lg-7">
+                <div class="row footer-row pt-3">
+                    <div class="col-12" style="padding: 0;">
+                        <ul class="bottom-ul">
+                            <li class="bottom-li"><a class="grey-text" href="homepage.html">Home</a></li>
+                            <li class="bottom-li"><a class="grey-text" href="homepage.html#features">Features</a></li>
+                            <li class="bottom-li"><a class="grey-text" href="homepage.html#pricing">Pricing</a></li>
+                            <li class="bottom-li"><a class="grey-text" href="about-us.html">About</a></li>
+                            <li class="bottom-li"><a class="grey-text" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row footer-row">
+                    <div class="col-12" style="padding: 20px 0 0 0;">
                         <ul class="bottom-ul">
                             <li class="bottom-li"><a class="grey-text" href="#">Terms & Conditions</a></li>
                             <li class="bottom-li"><a class="grey-text" href="#">Privacy Policy</a></li>
@@ -194,20 +215,19 @@
                     </div>
                 </div>
             </div>
-            <div class="row pt-3 w-100 text-center">
-                <div class="col-12">
-                    <p class="grey-text text-center">www.codekeeper.co - Codekeeper BV - All rights
-                        reserved
-                        2018.</p>
-                </div>
-            </div>
+        </div>
+    </div>
+    <div class="row w-100 text-center">
+        <div class="col-12">
+            <p class="grey-text text-center">www.codekeeper.co - Codekeeper BV - All rights
+                reserved
+                2018.</p>
         </div>
     </div>
 </section>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 <script src="script.js"></script>

@@ -31,26 +31,6 @@ p {
     line-height: 1.6;
 }
 
-.grey-bg {
-    background-color: #F9F9F9;
-}
-
-.teal-bg {
-    background-color: #0C7A75;
-}
-
-.teal-text {
-    color: #0C7A75;
-}
-
-.grey-text {
-    color: #808080;
-}
-
-.dark-grey-text {
-    color: #4A494A;
-}
-
 .lead-text {
     font-size: 18px;
     font-weight: 400;
@@ -79,19 +59,42 @@ p {
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 1.5px;
+    margin-bottom: 0.8em;
     color: black;
     text-transform: uppercase;
+}
+
+.grey-bg {
+    background-color: #F9F9F9;
+}
+
+.teal-bg {
+    background-color: #0C7A75;
+}
+
+.teal-text {
+    color: #0C7A75;
+}
+
+.grey-text {
+    color: #808080;
+}
+
+.dark-grey-text {
+    color: #4A494A;
 }
 
 /* Basic UI feature styling */
 .transparent-button {
     text-transform: uppercase;
     letter-spacing: 2px;
-    line-height: 50px;
+    font-size: 16px;
+    line-height: 0;
     color: #333333;
     border: none;
     background-color: transparent;
     padding: 0 30px 0 30px;
+    margin-bottom: 31px;
     cursor: pointer;
 }
 
@@ -136,27 +139,27 @@ p {
     }
 }
 
-.side-padding {
+.side-margin {
     margin-left: 20px;
     margin-right: 20px;
 }
 
 @media (min-width: 768px) {
-    .side-padding {
+    .side-margin {
         margin-left: 50px;
         margin-right: 50px;
     }
 }
 
 @media (min-width: 991px) {
-    .side-padding {
+    .side-margin {
         margin-left: 100px;
         margin-right: 100px;
     }
 }
 
 @media (min-width: 1200px) {
-    .side-padding {
+    .side-margin {
         margin-left: 200px;
         margin-right: 200px;
     }
@@ -253,7 +256,7 @@ a:hover {
     }
 
     .hero-image {
-        width: 65%;
+        width: 55%;
     }
 }
 
@@ -306,7 +309,7 @@ a:hover {
         margin: auto;
         padding: 0 20px 0 20px;
         opacity: 0.2;
-        filter: alpha(opacity=50); /* For IE8 and earlier */
+        filter: alpha(opacity=20); /* For IE8 and earlier */
     }
 
     .testimonials-div {
@@ -378,8 +381,16 @@ caption {
 
 /* As Seen On section styling */
 .seenon-img {
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
+}
+
+.quotes {
+    width: 2em;
+    height: auto;
+    float: left;
+    opacity: 0.3;
+    filter: alpha(opacity=30); /* For IE8 and earlier */
 }
 
 .speech-bubble {
@@ -676,7 +687,7 @@ caption {
 }
 
 @media (min-width: 991px) {
-    .footer-row{
+    .footer-row {
         height: 50px;
     }
 
@@ -685,8 +696,12 @@ caption {
     }
 }
 
-@media (max-width: 767px) {
-    .office-img {
-        width: 100%;
-    }
+/* offsetting html anchor according to fixed navbar */
+h2 {
+    position: relative;
+}
+
+h2 span {
+    position: absolute;
+    top: -170px;
 }
