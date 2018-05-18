@@ -1,6 +1,6 @@
 /* Basic body styling */
 body {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Muli', Helvetica, sans-serif;
     font-weight: 300;
     min-width: 345px;
     overflow-x: hidden;
@@ -14,7 +14,7 @@ h2 {
     color: #333333;
 }
 
-h2 span {  /* offsetting html anchor according to fixed navbar */
+h2 span { /* offsetting html anchor according to fixed navbar */
     position: absolute;
     top: -170px;
 }
@@ -34,6 +34,10 @@ h6 {
 
 p {
     line-height: 1.6;
+}
+
+b {
+    font-weight: 700;
 }
 
 .lead-text {
@@ -108,16 +112,22 @@ p {
 }
 
 .teal-button {
+    font-family: Muli, Helvetica, sans-serif !important;
     width: 220px;
     min-width: 200px;
     height: 60px;
-    background-color: #177F78;
-    color: white;
-    border-radius: 60px;
     font-size: 16px;
+    font-weight: 200 !important;
     text-align: center;
-    border: 2px solid white;
+    background-color: #177F78;
+    border-radius: 60px;
+    border: none;
+    color: white;
     cursor: pointer;
+}
+
+.white-border {
+    border: 2px solid white;
 }
 
 .rectangle {
@@ -165,8 +175,8 @@ p {
 
 @media (min-width: 1200px) {
     .side-margin {
-        margin-left: 200px;
-        margin-right: 200px;
+        margin-left: 100px;
+        margin-right: 100px;
     }
 }
 
@@ -257,7 +267,7 @@ a:hover {
 }
 
 .hero-first-div {
-    height: 40%;
+    height: 30%;
 }
 
 .hero-title-wrapper {
@@ -285,7 +295,7 @@ a:hover {
 }
 
 .hero-third-div {
-    height: 50%;
+    height: 60%;
 }
 
 .hero-image-wrapper {
@@ -297,6 +307,7 @@ a:hover {
     box-sizing: border-box;
     max-width: 100%;
     max-height: 100%;
+    box-shadow: 2px 0 12px #818181;
 }
 
 @media (min-width: 1200px) and (min-height: 600px) {
@@ -322,8 +333,8 @@ a:hover {
 }
 
 .jumbotron h1 {
+    font-family: 'Muli', Helvetica, sans-serif;
     font-size: 56px !important;
-    letter-spacing: -2px;
     color: #333333;
     padding-bottom: 10px;
 }
@@ -339,16 +350,34 @@ a:hover {
 }
 
 /* Testimonials section styling */
+.testimonials-padding {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+@media (max-width: 767px) {
+    .testimonials-padding {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+}
+
 .trusted-h4 {
+    font-weight: 300;
     font-size: 24px;
     letter-spacing: -0.17px;
     color: #7F8FA4;
 }
 
+.testimonials-img {
+    opacity: 0.25;
+    filter: alpha(opacity=25);
+}
+
 @media (max-width: 991px) {
     .testimonials-img {
         min-width: 130px;
-        max-height: 100%;
+        max-height: 50px;
         max-width: 100%;
         width: auto;
         height: auto;
@@ -359,14 +388,12 @@ a:hover {
         right: 0;
         margin: auto;
         padding: 0 20px 0 20px;
-        opacity: 0.2;
-        filter: alpha(opacity=20); /* For IE8 and earlier */
     }
 
     .testimonials-div {
         min-width: 150px;
-        height: 25vw;
-        width: 35vw;
+        height: 120px;
+        width: 50%;
         position: relative;
     }
 }
@@ -376,8 +403,6 @@ a:hover {
         padding-top: 60px;
         padding-right: 50px;
         padding-left: 50px;
-        opacity: 0.3;
-        filter: alpha(opacity=30);
     }
 
     .testimonials-div {
@@ -396,6 +421,10 @@ a:hover {
     -moz-box-shadow: 0 0 20px #F2F2F2;
     -webkit-box-shadow: 0 0 20px #F2F2F2;
     box-shadow: 0 0 20px #F2F2F2;
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 140px;
+    max-height: 140px;
 }
 
 @media (min-width: 768px) {
@@ -408,6 +437,80 @@ a:hover {
     .feature-img {
         width: 100%;
     }
+}
+
+/* Subfeatures section styling */
+@media (max-width: 768px) {
+
+    .padding-sub-first {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .padding-sub-second {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .padding-sub-third {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .padding-sub-fourth {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .padding-sub-first {
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
+    .padding-sub-second {
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+    .padding-sub-third {
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
+    .padding-sub-fourth {
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    .padding-sub-first {
+        padding-left: 0;
+        padding-right: 30px;
+    }
+
+    .padding-sub-second {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .padding-sub-third {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .padding-sub-fourth {
+        padding-left: 30px;
+        padding-right: 0;
+    }
+}
+
+/* Reasons section styling */
+.reasons-row {
+    display: flex;
+    justify-content: center;
 }
 
 /* Supported Platforms section styling */
@@ -432,8 +535,8 @@ caption {
 
 /* As Seen On section styling */
 .seenon-img {
-    width: 40%;
-    height: 40%;
+    width: 50%;
+    height: 50%;
 }
 
 .quotes {
@@ -481,6 +584,12 @@ caption {
 .price-plan {
     width: 100%;
     color: #333333;
+    text-decoration: underline;
+
+}
+
+a.active {
+    text-decoration: none;
 }
 
 .annual {
@@ -645,7 +754,13 @@ caption {
 
 /* CTA section styling */
 .cta-padding {
-    padding: 3rem;
+    padding: 3rem 1rem;
+}
+
+@media (min-width: 768px) {
+    .cta-padding {
+        padding: 4rem 6rem;
+    }
 }
 
 .cta-txt {
@@ -685,6 +800,7 @@ caption {
 
 .footer-leftside {
     padding: 0;
+
 }
 
 @media (max-width: 767px) {
@@ -698,6 +814,12 @@ caption {
     .footer-leftside {
         text-align: left;
     }
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
 .footer-p {
@@ -757,4 +879,10 @@ caption {
     .bottom-ul {
         justify-content: flex-end;
     }
+}
+
+.footer-last-line {
+    font-size: 12px;
+    text-align: center !important;
+    color: #818181;
 }

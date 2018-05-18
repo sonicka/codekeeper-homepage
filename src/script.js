@@ -1,28 +1,29 @@
 $(document).ready(function ($) {
     $(".price-plan").on('click', function () {
-        var target = $(this).attr('rel');
-        var other;
-        if (target === "monthly") {
-            other = "annual"
+        var active = $(this).attr('rel');
+        var inactive;
+        if (active === "monthly") {
+            inactive = "annual"
         } else {
-            other = "monthly"
+            inactive = "monthly"
         }
-        $('.' + target).show();
-        $('.' + other).hide();
+        $('.' + active).show();
+        $('.' + inactive).hide();
+        $('.price-plan').removeClass('active');
+        $(this).addClass('active');
     });
 
-    $("a").on('click', function (event) {
+    $("a").on('click', function () {
         $('html, body').animate({scrollTop: $(this.hash).offset().top}, 1000);
         return false;
     });
 
-});
-
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-        $('.navbar').addClass("sticky");
-    }
-    else {
-        $('.navbar').removeClass("sticky");
-    }
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.navbar').addClass("sticky");
+        }
+        else {
+            $('.navbar').removeClass("sticky");
+        }
+    });
 });
